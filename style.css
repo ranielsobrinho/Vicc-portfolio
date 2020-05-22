@@ -4,9 +4,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
+/* barra de navegação */
+#nav{
     float: right;
+    display: inline-flex;
+    margin-right: 2%;
+}
+.nav-item{
+    margin-right: 5px;
+    padding: 5px;
+    list-style: none;
+    
+}
+.nav-item>a{
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid red;
 }
 #logo{
     float: left;
+    margin-left: 2%;
+    padding: 5px;
+    border: 1px solid red;
 }
