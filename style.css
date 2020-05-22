@@ -9,8 +9,10 @@
     flex-wrap: wrap;
 }
 body{
-    background-color: grey;
+    background-image: url(Imagens/background.jpg);
     width: 300px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* barra de navegação */
 .navbar{
