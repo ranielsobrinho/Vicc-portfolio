@@ -9,10 +9,11 @@
     flex-wrap: wrap;
 }
 body{
-    background-image: url(Imagens/background.jpg);
+    background-image: url(Imagens/background300.jpg);
     width: 300px;
-    background-size: cover;
+    background-size: 300px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 /* barra de navegação */
 .navbar{
@@ -39,6 +40,10 @@ body{
     color: rgb(156, 150, 150);
 }
 #logo{
+    background-image: url(Imagens/logo1.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
     float: left;
     margin-left: 2%;
     padding: 5px;
