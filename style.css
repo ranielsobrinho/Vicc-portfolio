@@ -10,7 +10,7 @@ ul{list-style:none;}
 a{text-decoration: none;cursor: pointer; opacity: 0.9;}
 a:hover{opacity: 1; color: #0F96E3;}
 
-/*---  barra de navegação  ---*/
+/*---  BARRA DE NAVEGAÇÃO  ---*/
 header{
     background-color: rgba(7, 7, 7, 1);
     width: 100%;
@@ -161,4 +161,48 @@ header li:last-child{margin-right: 0px;}
 @media (max-width: 700px){
     #galeria .grid li.small{flex-basis: 100%;}
     #galeria .grid li.large{flex-basis: 100%;}
+}
+
+/*  CONTATO  */
+#contato{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    background-color: #F5F4F4;
+    padding:50px 0;
+}
+#contato h2{
+    font-size:2rem;
+    margin-bottom: 35px;
+    text-align:center;
+    color: #1F81C1;
+}
+#contato hr{
+    width:200px;
+    height:2px;
+    background-color: #1F81C1;
+    margin-bottom: 35px;
+    border:none;
+}
+#contato .grid{
+    display: flex;
+    margin-bottom: 25px;
+}
+#contato .grid li{margin-right:10px;}
+#contato .grid li:last-child{margin-right: 0;}
+#contato .grid li img{height: 60px;}
+#contato .grid li img:hover{height: 63px; transition:.3s;}
+
+/*  FOOTER  */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding:35px;
+    background-color: #F5F4F4;
+}
+footer p{
+    text-align: center;
+    color:#1F81C1;
 }
