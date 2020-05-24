@@ -42,8 +42,8 @@ header li:last-child{margin-right: 0px;}
 }
 
 /*   PRINCIPAL  */
-.principal{
-    background-image: url(Imagens/background.jpg);
+#principal{
+    background-image: url('Imagens/background.jpg');
     background-size: cover;
     min-height:100vh;
     display: flex;
@@ -52,21 +52,113 @@ header li:last-child{margin-right: 0px;}
     flex-direction: column;
     text-align: center;
 }
-.principal h1{
+#principal h1{
     font-size: 2.2rem;
     margin-bottom: 15px;
     color: #fff;
 }
-.principal h3{
+#principal h3{
     font-size: 1.3rem;
     margin-bottom: 15px;
     color: #F5F4F4;
 }
 @media (max-width: 700px){
-    .principal h1{
+    #principal h1{
         font-size:1.5rem;
     }
-    .principal h3{
+    #principal h3{
         font-size:1rem;
     }
+}
+
+/*  SOBRE MIM  */
+#sobre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+}
+#sobre h2{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #1F81C1;
+    text-align: center;
+}
+#sobre p{
+    max-width: 900px;
+    margin-bottom: 35px;
+    color: #1F81C1;
+    text-align: center;
+}
+#sobre hr{
+    width:200px;
+    height:2px;
+    background-color: #0F96E3;
+    margin-bottom: 50px;
+    border: none;
+}
+#sobre .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#sobre .grid li{
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#sobre .grid li.flutuante{flex-basis: 33%;}
+@media (max-width: 700px){
+    #sobre .grid li.flutuante{flex-basis: 100%;}
+}
+
+/*  GALERIA DE FOTOS  */
+#galeria{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    background: linear-gradient(#1F81C1, #9198e5)
+}
+#galeria h2{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+#galeria p{
+    margin-bottom: 35px;
+    color: #F5F4F4;
+    text-align: center;
+}
+#galeria hr{
+    width:200px;
+    height:2px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    border: none;
+}
+#galeria .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#galeria .grid li{
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#galeria .grid li.small{flex-basis: 40%;}
+#galeria .grid li.large{flex-basis: 60%;}
+@media (max-width: 700px){
+    #galeria .grid li.small{flex-basis: 100%;}
+    #galeria .grid li.large{flex-basis: 100%;}
 }
