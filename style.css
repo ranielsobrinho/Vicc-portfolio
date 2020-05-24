@@ -43,7 +43,7 @@ header li:last-child{margin-right: 0px;}
 
 /*   PRINCIPAL  */
 .principal{
-    background-image: url(Imagens/img1-melhor.jpg);
+    background-image: url(Imagens/background.jpg);
     background-size: cover;
     min-height:100vh;
     display: flex;
