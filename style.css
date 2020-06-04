@@ -7,8 +7,9 @@
     font-size:100%;
 }
 ul{list-style:none;}
-a{text-decoration: none;cursor: pointer; opacity: 0.9;}
-a:hover{opacity: 1; color: #0F96E3;}
+a{text-decoration: none;cursor: pointer; opacity: 0.9; text-transform: uppercase;}
+a:hover{opacity: 1; color: #0F96E3; transition: .4s;}
+a:active{color:#0F96E3; transition:0.2s; font-size: 15px;}
 
 /*---  BARRA DE NAVEGAÇÃO  ---*/
 header{
@@ -23,15 +24,14 @@ header{
     padding:20px 50px;
 }
 
-header nav ul{display: flex;}
+header nav {display: flex;}
 
-header li a{color: #ffffff; font-family: 'Courier New', Courier, monospace; font-weight: 700;}
-
-header li{margin: 0px 15px;}
-
-header li:first-child{margin-left: 0px;}
-
-header li:last-child{margin-right: 0px;}
+header nav a{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin: 0px 15px;
+}
 
 #logo{ width: 100px; height: 70px;}
 
@@ -111,7 +111,9 @@ header li:last-child{margin-right: 0px;}
     background-clip: content-box;
     background-size: cover;
     background-position: center;
+    border-radius:30px;
 }
+#sobre .grid li:hover{transform:scale(1.1, 1.1); transition:0.5s; cursor:pointer;}
 #sobre .grid li.flutuante{flex-basis: 33%;}
 @media (max-width: 700px){
     #sobre .grid li.flutuante{flex-basis: 100%;}
@@ -156,6 +158,7 @@ header li:last-child{margin-right: 0px;}
     background-clip: content-box;
     background-size: cover;
     background-position: center;
+    border-radius:27px;
 }
 #galeria .grid li.small{flex-basis: 40%;}
 #galeria .grid li.large{flex-basis: 60%;}
