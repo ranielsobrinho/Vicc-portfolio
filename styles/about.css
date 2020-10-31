@@ -1,0 +1,48 @@
+/*  SOBRE MIM  */
+#about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    background-color: #F5F4F4;
+}
+#about h2{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #1F81C1;
+    text-align: center;
+}
+#about p{
+    max-width: 900px;
+    margin-bottom: 35px;
+    color: #1F81C1;
+    text-align: center;
+}
+#about hr{
+    width:200px;
+    height:2px;
+    background-color: #0F96E3;
+    margin-bottom: 50px;
+    border: none;
+}
+#about .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#about .grid li{
+    height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    border-radius:30px;
+}
+
+#about .grid li.flutuante{flex-basis: 33%;}
+
+@media (max-width: 700px){
+    #about .grid li.flutuante{flex-basis: 100%;}
+}

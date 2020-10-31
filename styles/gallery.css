@@ -1,0 +1,50 @@
+/*  GALERIA DE FOTOS  */
+#gallery{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    background: linear-gradient(#1F81C1, #9198e5)
+}
+#gallery h2{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+#gallery p{
+    margin-bottom: 35px;
+    color: #F5F4F4;
+    text-align: center;
+}
+#gallery hr{
+    width:200px;
+    height:2px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    border: none;
+}
+#gallery .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery .grid li{
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    border-radius:27px;
+}
+#gallery .grid li.small{flex-basis: 40%;}
+
+#gallery .grid li.large{flex-basis: 60%;}
+
+@media (max-width: 700px){
+    #gallery .grid li.small{flex-basis: 100%;}
+
+    #gallery .grid li.large{flex-basis: 100%;}
+}
