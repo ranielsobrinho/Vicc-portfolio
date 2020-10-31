@@ -35,11 +35,6 @@ header nav a{
 
 #logo{ width: 100px; height: 70px;}
 
-@media (max-width: 700px){
-    header{flex-direction: column;position:fixed;}
-    #logo{ margin-bottom: 10px;display:none;}
-    a{opacity: 1}
-}
 
 /*   PRINCIPAL  */
 #principal{
@@ -61,14 +56,6 @@ header nav a{
     font-size: 1.3rem;
     margin-bottom: 15px;
     color: #F5F4F4;
-}
-@media (max-width: 700px){
-    #principal h1{
-        font-size:1.5rem;
-    }
-    #principal h3{
-        font-size:1rem;
-    }
 }
 
 /*  SOBRE MIM  */
@@ -115,10 +102,6 @@ header nav a{
 }
 
 #sobre .grid li.flutuante{flex-basis: 33%;}
-@media (max-width: 700px){
-    #sobre .grid li.flutuante{flex-basis: 100%;}
-    
-}
 
 /*  GALERIA DE FOTOS  */
 #galeria{
@@ -163,10 +146,6 @@ header nav a{
 }
 #galeria .grid li.small{flex-basis: 40%;}
 #galeria .grid li.large{flex-basis: 60%;}
-@media (max-width: 700px){
-    #galeria .grid li.small{flex-basis: 100%;}
-    #galeria .grid li.large{flex-basis: 100%;}
-}
 
 /*  CONTATO  */
 #contato{
@@ -210,4 +189,26 @@ footer{
 footer p{
     text-align: center;
     color:#1F81C1;
+}
+
+@media (max-width: 700px){
+    header{flex-direction: column;position:fixed;}
+
+    #logo{ margin-bottom: 10px;display:none;}
+
+    a{opacity: 1}
+
+    #principal h1{
+        font-size:1.5rem;
+    }
+
+    #principal h3{
+        font-size:1rem;
+    }
+
+    #sobre .grid li.flutuante{flex-basis: 100%;}
+
+    #galeria .grid li.small{flex-basis: 100%;}
+    
+    #galeria .grid li.large{flex-basis: 100%;}
 }
