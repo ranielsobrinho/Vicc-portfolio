@@ -38,7 +38,7 @@ header nav a{
 
 /*   PRINCIPAL  */
 #principal{
-    background-image: url('../Imagens/background.jpg');
+    background-image: url('../Images/background.jpg');
     background-size: cover;
     min-height:100vh;
     display: flex;
