@@ -11,12 +11,21 @@
     <body>
         <header><!--  Barra de navegação-->   
             <a href="index.html"><img src="Images/logo1.jpg" alt="Vicc Fotografia" id="logo"></a>
-            <nav>  
+            <nav>
+                <button class="btnMenu">MENU</button>
                 <ul class="menu">        
-                    <li><a href="#principal" id="first-child">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact" id="lastchild">Contato</a></li>      
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#principal">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#about">Sobre</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#gallery">Galeria</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item-action" href="#contact">Contato</a>
+                    </li>      
                 </ul>
             </nav>          
         </header><!-- Fim barra de navegação-->
@@ -67,5 +76,6 @@
         <footer>
             <p>Todos os direitos reservados - Vicc Fotografia 2020</p>
         </footer>
+        <script src="./scripts/btnMenu.js"></script>
     </body>
 </html>
