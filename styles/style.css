@@ -11,13 +11,13 @@
 header{
     background-color: rgba(7, 7, 7, 1);
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 50px;
+    padding:10px 50px;
 }
 
 .menu {display: flex;}
